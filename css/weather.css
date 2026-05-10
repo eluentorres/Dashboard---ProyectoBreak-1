@@ -1,0 +1,80 @@
+.weather-card {
+  margin-top: 30px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.search input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.search button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #00c2ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search button:hover {
+  background: #0099cc;
+}
+
+#weatherInfo {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#weatherInfo img {
+  width: 80px;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  opacity: 0.9;
+}
+
+.forecast-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#forecast {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.hour-card {
+  min-width: 120px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hour-card img {
+  width: 50px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="container">
+
+      <h1 class="title">🚀 Dashboard</h1>
+      <p class="subtitle">Bienvenido</p>
+
+      <div class="dashboard-grid">
+
+       <!-- RELOG -->
+        <div class="card">
+          <h2>🕒 Reloj</h2>
+          <p id="time"></p>
+          <p id="date"></p>
+          <p id="message"></p>
+          <a class="open-link" href="pages/clock.html">Relog</a>
+        </div>
+        <!-- WEATHER -->
+        <div class="card weather-card">
+          <h2>🌤️ Clima</h2>
+
+          <div class="search">
+            <input type="text" id="cityInput" placeholder="Ej: Madrid">
+            <button id="searchBtn">Buscar</button>
+          </div>
+
+          <div id="weatherInfo"></div>
+           <h3 style="margin-top:15px;">⏳ Próximas horas</h3>
+           <div id="miniForecast"></div>
+
+          <a class="open-link" href="pages/weather.html">El Tiempo</a>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="card">
+          <h2>🔐 Contraseña</h2>
+
+          <label for="length">Longitud (12 - 50):</label>
+          <input type="number" id="length" min="12" max="50" value="12">
+          <button id="generateBtn">Generar</button>
+          <p id="result"></p>
+
+          <a class="open-link" href="pages/password.html">Abrir Passwords</a>
+        </div>
+
+        <!-- LINKS -->
+        <div class="card links-dashboard">
+          <h2>🔗 Links</h2>
+
+          <div class="form">
+            <input type="text" id="title" placeholder="Título del link">
+            <input type="text" id="url" placeholder="https://...">
+            <button id="addBtn">Añadir</button>
+          </div>
+
+          <div id="linksContainer"></div>
+
+          <a class="open-link" href="pages/links.html">Abrir Links</a>
+        </div>
+
+          <!-- NOTES -->
+        <div class="card">
+  <h2>📝 Notas</h2>
+
+  <div id="miniNotes"></div>
+
+  <a class="open-link" href="pages/notes.html">Abrir Notas</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/background.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/clock.js"></script>
+  <script src="/js/weather.js"></script>
+  <script src="/js/password.js"></script>
+  <script src="/js/links.js"></script>
+  <script src="/js/notes.js"></script>
+
+</body>
+</html>

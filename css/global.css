@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out;
+  color: white;
+}
+
+
+.overlay {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.footer {
+  
+  padding: 015px;
+  text-align: center;
+  font-size: 0.9rem;
+  background: black;
+}

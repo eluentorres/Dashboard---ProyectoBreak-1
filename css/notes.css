@@ -1,0 +1,62 @@
+textarea {
+  width: 100%;
+  min-height: 120px;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  font-size: 1rem;
+}
+
+#addNoteBtn {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #00c2ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#addNoteBtn:hover {
+  background: #0099cc;
+}
+
+#notesContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.note-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.note-date {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.note-text {
+  white-space: pre-wrap;
+}
+
+.note-delete {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+.note-delete:hover {
+  background: darkred;
+}

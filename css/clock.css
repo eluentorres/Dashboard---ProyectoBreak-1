@@ -1,0 +1,24 @@
+.clock-card {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#time {
+  font-size: 4rem;
+  margin-top: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+#date {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+#message {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.85;
+}

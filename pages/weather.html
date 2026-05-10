@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estación Meteorológica</title>
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/weather.css">
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="container">
+
+      <a href="/index.html">⬅ Volver</a>
+
+      <div class="card weather-card">
+        <h1>🌤️ Estación Meteorológica</h1>
+
+        <div class="search">
+          <input type="text" id="cityInput" placeholder="Ej: Madrid">
+          <button id="searchBtn">Buscar</button>
+        </div>
+
+        <div id="weatherInfo"></div>
+
+        <h2 class="forecast-title">📌 Previsión por horas</h2>
+        <div id="forecast"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/js/background.js"></script>
+  <script src="/js/weather.js"></script>
+  <script src="/js/footer.js"></script>
+
+</body>
+</html>
