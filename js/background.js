@@ -11,11 +11,16 @@ const images = [
   "assets/img/bg10.jpg"
 ];
 
-const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
+const isInPagesFolder = window.location.pathname.toLowerCase().includes("/pages/");
+const basePath = isInPagesFolder ? "../" : "";
 
 function changeBackground() {
   const randomIndex = Math.floor(Math.random() * images.length);
   const selectedImage = basePath + images[randomIndex];
+
+  console.log("Intentando cargar fondo en:", selectedImage); 
+
+  document.body.style.backgroundImage = `url('${selectedImage}')`;
 
   document.body.style.backgroundImage = `url('${selectedImage}')`;
   document.body.style.backgroundSize = "cover";
